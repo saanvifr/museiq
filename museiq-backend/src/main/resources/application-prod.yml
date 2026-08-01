@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    # Use Railway's DATABASE_URL or fallback to memory if something goes wrong
+    url: ${DATABASE_URL:jdbc:h2:mem:museiqdb}
+    # Railway passes the full URL, Spring Boot handles the driver automatically based on the URL scheme (postgres:// or jdbc:postgresql://)
+  
+  jpa:
+    hibernate:
+      # Automatically create tables in production on first run
+      ddl-auto: update
+    show-sql: false
+
+server:
+  port: ${PORT:8080}
+
+jwt:
+  secret: ${JWT_SECRET:404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970}
+  expiration: 86400000
+
+gemini:
+  api:
+    key: ${GEMINI_API_KEY:your_api_key_here}
