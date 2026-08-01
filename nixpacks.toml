@@ -1,0 +1,8 @@
+[phases.setup]
+nixPkgs = ["jdk17", "maven"]
+
+[phases.build]
+cmds = ["cd museiq-backend && mvn clean package -DskipTests"]
+
+[start]
+cmd = "cd museiq-backend && java -Dspring.profiles.active=prod -jar target/*.jar"
