@@ -103,7 +103,7 @@ const AIInsights = () => {
                 <Card key={index} className="flex overflow-hidden group">
                   <div className="w-1/3 bg-bg-primary flex-shrink-0 relative overflow-hidden">
                     {rec.artwork ? (
-                      <img src={rec.artwork} alt={rec.album} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+                      <img src={rec.artwork.startsWith('http') ? rec.artwork : `${import.meta.env.VITE_API_BASE_URL}${rec.artwork}`} alt={rec.album} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-gray-400 text-sm">No Art</div>
                     )}

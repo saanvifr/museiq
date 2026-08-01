@@ -18,13 +18,13 @@ export const aiService = {
             {
               album: 'Random Access Memories',
               artist: 'Daft Punk',
-              artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/3d/8c/fb/3d8cfb1b-68e1-9538-4e31-50eef4b898a1/13G01_0381_digital_1_cov_1080.jpg/600x600bb.jpg',
+              artwork: 'https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg',
               reason: 'Since you enjoy Electronic music and rate highly rated albums well, this is a must-have.'
             },
             {
               album: 'To Pimp a Butterfly',
               artist: 'Kendrick Lamar',
-              artwork: 'https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0d/17/ab/0d17aba5-bafb-d1cd-5321-72f447fdbbde/15UMGIM13926.rgb.jpg/600x600bb.jpg',
+              artwork: 'https://upload.wikimedia.org/wikipedia/en/f/f6/Kendrick_Lamar_-_To_Pimp_a_Butterfly.png',
               reason: 'Aligns perfectly with your appreciation for critically acclaimed hip-hop.'
             }
           ]
