@@ -2,7 +2,6 @@
 
 A full-stack, AI-powered music discovery and library application. Search for your favorite albums, build custom playlists, get AI-generated music insights, and track your listening history.
 
-![MuseIQ Hero](https://images.unsplash.com/photo-1619983081563-430f63602796?q=80&w=1000&auto=format&fit=crop) *(Placeholder for actual project screenshot)*
 
 ## Features 🚀
 
