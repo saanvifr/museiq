@@ -15,9 +15,9 @@ Search • Save • Analyze • Discover
 
 ### 🌐 Live Demo
 
-https://saanvifr-museiq.vercel.app
+🔗 **https://saanvifr-museiq.vercel.app**
 
-</div>
+> **Note:** Please create a new account by signing up first, then log in using your registered credentials to access the application and all features.
 
 ---
 
@@ -55,12 +55,13 @@ MuseIQ provides visual insights into your music collection.
 
 # 🤖 AI Feature
 
-MuseIQ integrates **Google Gemini** to analyze the user's saved library and generate personalized music insights including:
+MuseIQ integrates **Google Gemini** to analyze the user's saved music library and generate personalized insights based on favorite genres, artists, ratings, and listening preferences.
 
-- Similar artist recommendations
-- Genre analysis
-- Listening summary
-- Album suggestions based on ratings
+Features include:
+- 🎵 Album recommendations
+- 🎤 Similar artist suggestions
+- 📈 Genre insights
+- 📝 Personalized listening summaries
 
 ---
 
@@ -138,41 +139,9 @@ iTunes Search API
 | created_at | Created Timestamp |
 | updated_at | Updated Timestamp |
 
----
-
-# 🔗 REST APIs
-
-```
-POST   /auth/register
-POST   /auth/login
-
-GET    /api/search
-
-GET    /api/library
-POST   /api/library
-PUT    /api/library/{id}
-DELETE /api/library/{id}
-```
 
 ---
 
-# 🔐 Authentication
-
-JWT Authentication secures all user-specific endpoints.
-
-Protected Routes
-
-- Library
-- Analytics
-- AI Insights
-
-Public Routes
-
-- Login
-- Register
-- Search Albums
-
----
 
 # ⚙ Local Development
 
@@ -247,18 +216,5 @@ VITE_API_URL=http://localhost:8080
 - Selected **Albums** as the primary entity because they provide richer metadata for analytics.
 - Used the public iTunes Search API to avoid authentication complexity.
 - Prioritized clean architecture, security, and maintainability over additional social features.
-
----
-
-# 🚀 Future Enhancements
-
-- Playlist Management
-- Advanced Search Filters
-- Infinite Scroll & Pagination
-- Unit & Integration Testing
-- Redis Caching
-- Music Sharing
-- Dark Mode
-- Recommendation History
 
 ---
