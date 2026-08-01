@@ -2,6 +2,7 @@
 
 A full-stack, AI-powered music discovery and library application. Search for your favorite albums, build custom playlists, get AI-generated music insights, and track your listening history.
 
+![MuseIQ Hero](assets/hero.png)
 
 ## Features 🚀
 
@@ -11,6 +12,8 @@ A full-stack, AI-powered music discovery and library application. Search for you
 - **Recently Played History**: Automatically track and view the albums you've listened to.
 - **AI Music Insights**: Get personalized insights and recommendations powered by Google's Gemini AI.
 - **User Profiles**: Secure authentication with custom display names and avatar image uploads.
+
+![MuseIQ AI Insights](assets/discover.png)
 
 ## Tech Stack 💻
 
