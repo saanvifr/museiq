@@ -217,7 +217,7 @@ http://localhost:5173
 # ☁ Production Deployment
 
 - **Frontend:** Vercel
-- **Backend:** Railway
+- **Backend:** Render
 - **Database:** PostgreSQL
 
 ---
@@ -262,17 +262,3 @@ VITE_API_URL=http://localhost:8080
 - Recommendation History
 
 ---
-
-<div align="center">
-
-## 👩‍💻 Developer
-
-### **Saanvi Singh**
-
-GitHub • https://github.com/saanvifr
-
-LinkedIn • https://www.linkedin.com/in/saanvi-singh-9b4550324/
-
-⭐ If you like this project, consider giving it a star!
-
-</div>
