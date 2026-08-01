@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class FrontendController {
 
-    // Forward all non-api, non-uploads, non-static file requests to the React index.html
-    @RequestMapping(value = { "/", "/{x:[\\w\\-]+}", "/{x:^(?!api$).*$}/**/{y:[\\w\\-]+}" })
+    // Forward all non-api routes without a dot (no file extensions) to the React index.html
+    @RequestMapping(value = { "/", "/{path:[^\\.]*}", "/**/{path:[^\\.]*}" })
     public String forward() {
         return "forward:/index.html";
     }
