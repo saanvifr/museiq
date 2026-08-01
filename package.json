@@ -1,0 +1,7 @@
+{
+  "name": "museiq-monorepo",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "cd MuseIQ && npm install && npm run build"
+  }
+}
