@@ -6,26 +6,34 @@
 
 Search • Save • Analyze • Discover
 
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)]()
-[![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?style=for-the-badge&logo=springboot)]()
-[![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk)]()
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql)]()
-[![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens)]()
-[![Gemini](https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google)]()
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?style=for-the-badge&logo=springboot)
+![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql)
+![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens)
+![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google)
 
-### 🌐 Live Demo
+## 🌐 Live Demo
 
-🔗 **https://saanvifr-museiq.vercel.app**
+### https://saanvifr-museiq.vercel.app
 
 > **Note:** Please create a new account by signing up first, then log in using your registered credentials to access the application and all features.
+
+</div>
 
 ---
 
 # ✨ Overview
 
-MuseIQ is a full-stack music discovery platform that allows users to search the iTunes music catalog, build a personalized album library, visualize listening analytics, and receive AI-powered music recommendations.
+MuseIQ is a full-stack music discovery platform that enables users to search the iTunes music catalog, build a personalized album library, visualize listening analytics, and receive AI-powered music recommendations.
 
 The application combines a modern React frontend with a secure Spring Boot backend to deliver an engaging music exploration experience.
+
+---
+
+# 🎯 Entity Choice
+
+MuseIQ focuses on **Albums** as the primary entity because albums provide richer metadata such as genre, artwork, release date, and track count. This enables meaningful analytics and personalized AI-powered recommendations.
 
 ---
 
@@ -36,15 +44,15 @@ The application combines a modern React frontend with a secure Spring Boot backe
 - ⭐ Rate albums and add personal notes
 - ✏️ Edit and delete saved albums
 - 📊 Interactive analytics dashboard
-- 🤖 AI-generated music recommendations using Google Gemini
+- 🤖 AI-powered music recommendations using Google Gemini
 - 🔐 Secure JWT Authentication
-- 📱 Responsive design across devices
+- 📱 Responsive design across all devices
 
 ---
 
 # 📊 Analytics Dashboard
 
-MuseIQ provides visual insights into your music collection.
+The dashboard provides insights into the user's music library through interactive charts.
 
 - 📀 Albums by Genre
 - 🎤 Albums by Artist
@@ -55,9 +63,10 @@ MuseIQ provides visual insights into your music collection.
 
 # 🤖 AI Feature
 
-MuseIQ integrates **Google Gemini** to analyze the user's saved music library and generate personalized insights based on favorite genres, artists, ratings, and listening preferences.
+MuseIQ integrates **Google Gemini** to analyze the user's saved library and generate personalized insights based on listening preferences.
 
 Features include:
+
 - 🎵 Album recommendations
 - 🎤 Similar artist suggestions
 - 📈 Genre insights
@@ -67,20 +76,18 @@ Features include:
 
 # 🏗 Architecture
 
-```
-React (Vite)
-      │
-      ▼
-Spring Boot REST API
-      │
-      ▼
-PostgreSQL Database
-      │
-      ▼
-Google Gemini API
-
-      +
-iTunes Search API
+```text
+                React (Vite)
+                     │
+                     ▼
+          Spring Boot REST API
+                     │
+         ┌───────────┴───────────┐
+         ▼                       ▼
+ PostgreSQL Database      Google Gemini API
+         ▲
+         │
+ iTunes Search API
 ```
 
 ---
@@ -89,16 +96,14 @@ iTunes Search API
 
 ## 🎨 Frontend
 
-- React.js (Vite)
+- React 19 (Vite)
 - Tailwind CSS
 - React Router
 - Axios
 - Recharts
 - Lucide React
 
----
-
-## ⚙ Backend
+### Backend
 
 - Java 17
 - Spring Boot 3
@@ -107,22 +112,18 @@ iTunes Search API
 - Spring Data JPA
 - Hibernate
 
----
-
-## 🗄 Database
+### Database
 
 - PostgreSQL
 
----
-
-## 🌐 External APIs
+### External APIs
 
 - iTunes Search API
 - Google Gemini API
 
 ---
 
-# 🗃 Database Schema
+# 🗄 Database Schema
 
 | Field | Description |
 |-------|-------------|
@@ -134,16 +135,14 @@ iTunes Search API
 | release_date | Release Date |
 | track_count | Number of Tracks |
 | artwork_url | Album Artwork |
-| user_rating | Rating |
-| user_notes | Notes |
+| user_rating | User Rating |
+| user_notes | Personal Notes |
 | created_at | Created Timestamp |
 | updated_at | Updated Timestamp |
 
-
 ---
 
-
-# ⚙ Local Development
+# ⚙️ Local Setup
 
 ## Clone Repository
 
@@ -159,13 +158,11 @@ cd museiq-backend
 ./mvnw spring-boot:run
 ```
 
-Runs on
+Runs on:
 
 ```
 http://localhost:8080
 ```
-
----
 
 ## Frontend
 
@@ -175,7 +172,7 @@ npm install
 npm run dev
 ```
 
-Runs on
+Runs on:
 
 ```
 http://localhost:5173
@@ -183,7 +180,7 @@ http://localhost:5173
 
 ---
 
-# ☁ Production Deployment
+# ☁️ Production Deployment
 
 - **Frontend:** Vercel
 - **Backend:** Render
@@ -197,9 +194,7 @@ http://localhost:5173
 
 ```properties
 DATABASE_URL=your_database_url
-
 JWT_SECRET=your_secret
-
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
@@ -211,10 +206,10 @@ VITE_API_URL=http://localhost:8080
 
 ---
 
-# ⚖ Trade-offs
+# ⚖️ Trade-offs
 
-- Selected **Albums** as the primary entity because they provide richer metadata for analytics.
-- Used the public iTunes Search API to avoid authentication complexity.
-- Prioritized clean architecture, security, and maintainability over additional social features.
+- Selected **Albums** as the primary entity because they provide richer metadata for analytics and AI insights.
+- Used the public **iTunes Search API**, which simplifies integration but limits results to Apple's music catalog.
+- Prioritized clean architecture, security, and maintainability over advanced features such as playlists, social sharing, and caching.
 
 ---
