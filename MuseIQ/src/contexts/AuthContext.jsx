@@ -26,10 +26,10 @@ export const AuthProvider = ({ children }) => {
   };
 
   const register = async (name, email, password) => {
-    const userData = await authService.register(name, email, password);
-    localStorage.setItem('token', userData.token);
-    localStorage.setItem('user', JSON.stringify(userData));
-    setUser(userData);
+    await authService.register(name, email, password);
+    // The backend /auth/register only returns a success message, not a JWT.
+    // So we must automatically call login right after to get the token!
+    await login(email, password);
   };
 
   const logout = () => {
