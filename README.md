@@ -9,31 +9,33 @@
 ![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?style=for-the-badge&logo=springboot)
 ![Java](https://img.shields.io/badge/Java-17-ED8B00?style=for-the-badge&logo=openjdk)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql)
+![MySQL](https://img.shields.io/badge/MySQL-8-4479A1?style=for-the-badge&logo=mysql)
 ![JWT](https://img.shields.io/badge/JWT-Authentication-000000?style=for-the-badge&logo=jsonwebtokens)
 ![Gemini AI](https://img.shields.io/badge/Google-Gemini_AI-4285F4?style=for-the-badge&logo=google)
-
-### 🌐 [Live Demo](https://saanvifr-museiq.vercel.app)
-
-[GitHub Repository](https://github.com/saanvifr/museiq)
-
-> **Getting started:** Create an account using Sign Up, then log in with your registered credentials to explore the application.
 
 </div>
 
 ---
 
-## 📌 Overview
+# ✨ Overview
 
-MuseIQ is a full-stack music discovery and analytics platform that helps users explore albums, manage their personal music libraries, understand their music preferences, and discover new music through AI-powered recommendations.
+MuseIQ is a full-stack music discovery platform that enables users to search the iTunes music catalog, build a personalized album library, visualize music analytics, and receive AI-powered music recommendations.
 
-Users can search the iTunes music catalog, save albums, rate them, add personal notes, and visualize their music preferences through an interactive analytics dashboard.
+Users can search for albums, save them to their personal library, rate albums, add personal notes, and analyze their music preferences through an interactive dashboard.
 
-The platform also integrates Google Gemini API to generate personalized music recommendations and insights based on users' saved albums.
+The application combines a React frontend with a Java Spring Boot backend, MySQL database, and Google Gemini API to deliver an engaging music discovery experience.
 
 ---
 
-## ✨ Features
+# 🎯 Entity Choice
+
+MuseIQ focuses on **Albums** as its primary entity because albums provide richer metadata such as genre, artwork, release date, and track count.
+
+This information enables meaningful analytics and personalized AI-powered music recommendations.
+
+---
+
+# 🚀 Features
 
 - 🔍 **Album Search:** Search albums using the iTunes Search API.
 - ❤️ **Personal Music Library:** Save albums to a personal collection.
@@ -43,28 +45,28 @@ The platform also integrates Google Gemini API to generate personalized music re
 - 🤖 **AI Recommendations:** Get personalized album recommendations using Google Gemini.
 - 🎤 **Artist Suggestions:** Discover similar artists.
 - 🔐 **JWT Authentication:** Secure user authentication.
-- 📱 **Responsive UI:** Access the application across different screen sizes.
+- 📱 **Responsive Design:** Access the application across different screen sizes.
 
 ---
 
-## 📊 Analytics Dashboard
+# 📊 Analytics Dashboard
 
-The analytics dashboard provides visual insights into the user's saved album collection.
+The dashboard provides insights into the user's saved music library through interactive charts.
 
 It includes:
 
-- Albums by Genre
-- Albums by Artist
-- Albums by Release Year
-- Highest-Rated Albums
+- 📀 Albums by Genre
+- 🎤 Albums by Artist
+- 📅 Albums by Release Year
+- ⭐ Highest-Rated Albums
 
-Interactive charts are built using **Recharts**.
+Interactive visualizations are implemented using **Recharts**.
 
 ---
 
-## 🤖 AI-Powered Music Insights
+# 🤖 AI-Powered Music Insights
 
-MuseIQ integrates the **Google Gemini API** to analyze users' saved music libraries and generate personalized insights.
+MuseIQ integrates the **Google Gemini API** to analyze users' saved music libraries and generate personalized music insights.
 
 AI-powered features include:
 
@@ -73,47 +75,49 @@ AI-powered features include:
 - 📈 Genre preference insights
 - 📝 Personalized listening summaries
 
-The backend prepares the relevant user-library information and sends it to Gemini to generate recommendations.
+The backend prepares relevant information from the user's saved library and sends it to Gemini to generate personalized recommendations and insights.
 
 ---
 
-## 🏗️ System Architecture
+# 🏗️ System Architecture
 
 MuseIQ follows a frontend-backend architecture.
 
 ```text
-                  USER
-                    |
-                    v
-              React Frontend
-                    |
-              HTTP Requests
-                    |
-                    v
-            Spring Boot Backend
-                    |
-          +---------+---------+
-          |         |         |
-          v         v         v
-        MySQL    Gemini API   iTunes
-       Database    API      Search API
+                    USER
+                      |
+                      v
+                React Frontend
+                      |
+                HTTP Requests
+                      |
+                      v
+             Spring Boot Backend
+                      |
+           +----------+----------+
+           |          |          |
+           v          v          v
+         MySQL     Gemini API   iTunes
+        Database     API      Search API
 ```
 
 ### Application Workflow
 
 1. The user interacts with the React frontend.
-2. The frontend sends HTTP requests to the Spring Boot backend.
-3. The backend handles application logic and database operations.
+2. React sends HTTP requests to the Spring Boot backend.
+3. Spring Boot handles application logic and database operations.
 4. MySQL stores user information and saved album details.
 5. The backend communicates with the iTunes Search API to retrieve album information.
-6. Google Gemini processes relevant saved-library information to generate personalized music insights.
-7. The backend returns the results to the frontend for display.
+6. The backend sends relevant saved-library information to Google Gemini.
+7. Gemini generates personalized music insights and recommendations.
+8. The backend returns the results to the frontend for display.
 
 ---
 
-## 🛠️ Technology Stack
+# 🛠️ Technology Stack
 
-### Frontend
+### 🎨 Frontend
+
 - React 19
 - Vite
 - Tailwind CSS
@@ -122,7 +126,8 @@ MuseIQ follows a frontend-backend architecture.
 - Recharts
 - Lucide React
 
-### Backend
+### ⚙️ Backend
+
 - Java 17
 - Spring Boot 3
 - Spring Security
@@ -130,16 +135,18 @@ MuseIQ follows a frontend-backend architecture.
 - Spring Data JPA
 - Hibernate
 
-### Database
+### 🗄️ Database
+
 - MySQL
 
-### External APIs
+### 🔗 External APIs
+
 - iTunes Search API
 - Google Gemini API
 
 ---
 
-## 🗄️ Database Design
+# 🗄️ Database Schema
 
 Albums are the primary entity in MuseIQ.
 
@@ -164,9 +171,9 @@ User-specific album information is managed within the application's database.
 
 ---
 
-## ⚙️ Installation & Setup
+# ⚙️ Local Setup
 
-### Prerequisites
+## Prerequisites
 
 Make sure you have installed:
 
@@ -175,14 +182,14 @@ Make sure you have installed:
 - MySQL
 - Git
 
-### 1. Clone the Repository
+## 1. Clone the Repository
 
 ```bash
 git clone https://github.com/saanvifr/museiq.git
 cd museiq
 ```
 
-### 2. Set Up MySQL
+## 2. Set Up MySQL
 
 Start MySQL and create the database:
 
@@ -190,30 +197,29 @@ Start MySQL and create the database:
 CREATE DATABASE museiq;
 ```
 
-Configure your database credentials in the backend environment or application configuration.
+Configure your MySQL database credentials in the backend configuration.
 
-### 3. Configure Backend Environment Variables
+## 3. Configure Environment Variables
 
-Set the following values according to your backend configuration:
+Configure the following values according to your backend implementation:
 
 ```properties
-SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/museiq
-SPRING_DATASOURCE_USERNAME=your_mysql_username
-SPRING_DATASOURCE_PASSWORD=your_mysql_password
-
-JWT_SECRET=your_jwt_secret
+DATABASE_URL=your_mysql_database_url
+JWT_SECRET=your_secret
 GEMINI_API_KEY=your_gemini_api_key
 ```
 
-### 4. Run the Backend
+Never commit actual passwords, API keys, or secret values to GitHub.
 
-Open a terminal in the backend directory:
+## 4. Run the Backend
+
+Navigate to the backend directory:
 
 ```bash
 cd museiq-backend
 ```
 
-Run the Spring Boot application:
+Run the Spring Boot application.
 
 **Windows:**
 
@@ -227,22 +233,22 @@ mvnw.cmd spring-boot:run
 ./mvnw spring-boot:run
 ```
 
-Backend URL:
+Backend runs at:
 
 ```text
 http://localhost:8080
 ```
 
-### 5. Run the Frontend
+## 5. Run the Frontend
 
-Open another terminal in the frontend directory:
+Open another terminal and navigate to the frontend directory:
 
 ```bash
 cd MuseIQ
 npm install
 ```
 
-Create or configure the frontend environment file:
+Configure the frontend environment variable:
 
 ```env
 VITE_API_URL=http://localhost:8080
@@ -254,7 +260,7 @@ Start the development server:
 npm run dev
 ```
 
-Frontend URL:
+Frontend runs at:
 
 ```text
 http://localhost:5173
@@ -262,7 +268,7 @@ http://localhost:5173
 
 ---
 
-## ☁️ Deployment
+# ☁️ Production Deployment
 
 | Component | Platform |
 |---|---|
@@ -270,33 +276,31 @@ http://localhost:5173
 | Backend | Render |
 | Database | MySQL |
 
-The application uses environment variables to manage configuration and sensitive credentials.
+Environment variables are used to manage application configuration and sensitive credentials.
 
 ---
 
-## ⚖️ Design Decisions & Trade-offs
+# ⚖️ Design Decisions & Trade-offs
 
-| Decision | Reason |
-|---|---|
-| Albums as the primary entity | Albums provide rich metadata for analytics and recommendations. |
-| iTunes Search API | Provides access to Apple's music catalog without maintaining a separate music catalog. |
-| MySQL | Stores structured application data and user-specific album collections. |
-| Google Gemini API | Generates personalized recommendations and music insights. |
-| React and Spring Boot | Separate frontend presentation from backend business logic. |
+- **Albums as the primary entity:** Albums provide rich metadata for analytics and personalized recommendations.
+- **iTunes Search API:** Simplifies music catalog integration without maintaining a separate music catalog.
+- **MySQL:** Stores structured application data and user-specific album collections.
+- **Google Gemini API:** Generates personalized music recommendations and insights.
+- **React and Spring Boot:** Separate frontend presentation from backend business logic.
 
 ### Future Improvements
 
-- Playlist creation and management
-- Social sharing of music collections
-- Recommendation history
-- Caching for frequently searched albums
-- More detailed music analytics
+- Playlist creation and management.
+- Social sharing of music collections.
+- Recommendation history.
+- Caching for frequently searched albums.
+- More detailed music analytics.
 
 ---
 
 <div align="center">
 
-## 🎵 Discover Music. Understand Your Taste. Explore More.
+### 🎵 Discover Music. Understand Your Taste. Explore More.
 
 **Built with React, Java, Spring Boot, MySQL, and Google Gemini AI.**
 
